@@ -100,9 +100,6 @@ def accuracyCheck(userSentence):
                 # finds the difference in length between the original word and the user's word.
                 # absolute value is used because the user's word could be longer than the original word, ending up in a negative value.
                 incorrectChars += abs(len(sentenceList[wordNum]) - len(userSplice[wordNum]))
-                
-    print(f'total amt of correct: {correctChars}')
-    print(f'total amt of incorrect: {incorrectChars}')      
     
     # rounds the accuracy percentage to 2 decimal places, and multiplies it by 100 to find the percentage
     accuracy = round((correctChars / (correctChars+incorrectChars)), 2) * 100
